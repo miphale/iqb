@@ -17,7 +17,8 @@ case $1 in
 		echo "Starting $MYSQL_DOCKER_SERVICE_NAME ..."		
         if [ ! -f $MYSQL_PID_PATH_NAME ]; then
 			cd ../ora-docker
-			docker-compose -f docker-compose up -d
+			#docker-compose -f docker-compose up -d
+			docker-compose up
 			cd ../$RUN_PATH
             echo $! > $MYSQL_PID_PATH_NAME
             echo "$MYSQL_DOCKER_SERVICE_NAME started ..."
@@ -50,7 +51,7 @@ case $1 in
             MYSQLPID=$(cat $MYSQL_PID_PATH_NAME);
             echo "$MYSQL_DOCKER_SERVICE_NAME stopping ..."
 			cd ../ora-docker
-			docker-compose stop
+			docker-compose down
 			cd ../$RUN_PATH
             #kill $MYSQLPID;
             echo "$MYSQL_DOCKER_SERVICE_NAME stopped ..."
