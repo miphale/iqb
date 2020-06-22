@@ -43,5 +43,5 @@ The test case 'testAddPerson' requires a valid SA ID number to run. For obvious 
 * MySQL docker: <br/> 
 if you change any of the server properties: (usernames, container name, password or port), note you must update the values in application.properties file in ora-api<br/>
 * On Windows: <br/>
-For property: spring.datasource.url Networking on windows get iffy so you can use the docker container ip address instead of the container name (*ora-mysql*) or you can map your container IP address to the container name in your host file so the property value becomes either: jdbc:mysql://${container_name}:3308/ora?useSSL=false or jdbc:mysql://&{ip_address}:3308/ora?useSSL=false
+For property: spring.datasource.url Networking on windows get iffy so you can use the docker container ip address instead of the container name (*ora-mysql*) or you can map your container IP address to the container name in your host file so the property value becomes either: jdbc:mysql://${container_name}:3308/ora?useSSL=false or jdbc:mysql://${ip_address}:3308/ora?useSSL=false
 
