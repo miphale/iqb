@@ -1,4 +1,4 @@
-**Online Registration System**
+#Online Registration System
 
 *Project list*
 1. MySQL on docker
@@ -27,7 +27,7 @@ Once all the projects are running, access the web UI using the url: localhost:42
 # Stop services
 Run command './ora-startup-projects stop'
 
-2. **Manual Run**
+2. **Manual Run** <br />
 * MySQL Docker
 In a docker machine, setup the mysql container. Run docker-compose using the docker-compose file in ora-docker
 * Rest API 
