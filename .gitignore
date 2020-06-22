@@ -1,0 +1,69 @@
+# Package Files #
+*.war
+*.ear
+*.db
+*.jar
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Directories #
+build/
+bin/
+dest/
+cached/
+target/
+app/
+temp/
+dist/
+.metadata/
+logs/
+
+# OS Files #
+.DS_Store
+ 
+*.class
+*.classpath
+*.dll
+
+# Windows image file caches
+Thumbs.db 
+ 
+# Folder config file
+Desktop.ini
+
+# OSX #
+ 
+.DS_Store
+.svn
+ 
+# Thumbnails
+._*
+ 
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Eclipse #
+
+log.txt
+clog.*
+*.log.*
+*.log
+.metadata
+RemoteSystemsTempFiles/.project
+bin/**
+tmp/**
+tmp/**/*
+*/DataTest/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+config.properties
+status.properties
+.settings/
+.loadpath
+*.project
