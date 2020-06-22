@@ -1,6 +1,6 @@
-#Online Registration System
+# Online Registration System
 
-*Project list*
+**Project list**
 1. MySQL on docker
 ora-docker
 Contains docker-compose file and the init sql file
@@ -9,13 +9,13 @@ ora-api
 3. Form and Report
 ora-angular-client
 
-**Running the project**
+## Running the project
 
-1. **Auto Run**
+1. **Auto Run** <br/>
 On a Linux machine (An assumption is made that the linux machine has docker installed)
 In project ora-run, there is a .sh script you can utilise to start and stop the services
 
-# Start services
+**Start services** <br/>
 Run command './ora-startup-projects start'
 The .sh script command starts the projects in the following order:
 * MySQL Docker (ora-docker): runs a 'docker-compose' commandto setup and start mysql on docker. The docker-compose file is setup to run the init sql script to create the 'ora' database
@@ -23,11 +23,11 @@ The .sh script command starts the projects in the following order:
 * Form and Report (ora-angular-client): runs a 'ng serve' command to compile and start up the ui project
 
 Once all the projects are running, access the web UI using the url: localhost:4200
-
-# Stop services
+<br />
+**Stop services**<br/>
 Run command './ora-startup-projects stop'
 
-2. **Manual Run** <br />
+2. **Manual Run** <br/>
 * MySQL Docker
 In a docker machine, setup the mysql container. Run docker-compose using the docker-compose file in ora-docker
 * Rest API 
@@ -37,8 +37,8 @@ From the directory: ora-angular-client, run command 'ng serve'
 * Access the web UI using the url: localhost:4200 Use the nav menu to create new person or view list of people already created
 
 
-**Notes:**
-* Tests
+## Notes:
+* Tests: <r/>
 The test case 'testAddPerson' requires a valid SA ID number to run. For obvious reasons I didn't provide that in this repo. You can provide a valid ID, comment out the specified assertion line to accurately run the test
-* MySQL docker: 
+* MySQL docker: <br/> 
 if you change any of teh server properties: (usernames, container name, password or port), note you must update the values in application.properties file in ora-api
