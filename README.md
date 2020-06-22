@@ -11,9 +11,9 @@ ora-angular-client
 
 ## Running the project
 
-1. **Auto Run** <br/>
+1. **Auto Run** <br/><br/>
 On a Linux machine (An assumption is made that the linux machine has docker installed)
-In project ora-run, there is a .sh script you can utilise to start and stop the services
+In project ora-run, there is a .sh script you can utilise to start and stop all services
 
 **Start services** <br/>
 Run command './ora-startup-projects start'
@@ -23,7 +23,7 @@ The .sh script command starts the projects in the following order:
 * Form and Report (ora-angular-client): runs a 'ng serve' command to compile and start up the ui project
 
 Once all the projects are running, access the web UI using the url: localhost:4200
-<br />
+<br/><br/>
 **Stop services**<br/>
 Run command './ora-startup-projects stop'
 
@@ -38,7 +38,7 @@ From the directory: ora-angular-client, run command 'ng serve'
 
 
 ## Notes:
-* Tests: <r/>
+* Tests: <br/>
 The test case 'testAddPerson' requires a valid SA ID number to run. For obvious reasons I didn't provide that in this repo. You can provide a valid ID, comment out the specified assertion line to accurately run the test
 * MySQL docker: <br/> 
 if you change any of teh server properties: (usernames, container name, password or port), note you must update the values in application.properties file in ora-api
